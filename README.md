@@ -1,4 +1,4 @@
-# arif
+#<H2> arif</h2>
 <p>#use Termux Fast Time Then you can follow this commands</P>
 <p>apt update</P>
 <P>apt install </p>
@@ -13,6 +13,6 @@
 <P>git clone https://github.com/marifulbd/arif </p>
 <P>cd arif </p>
 <P>python2 arif.py </p>
-<P>Username: ARIF </p>
-<P>Password: ARIF</p>
+<P>Username: arif </p>
+<P>Password: arif</p>
 
